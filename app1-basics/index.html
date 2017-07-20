@@ -1,6 +1,16 @@
-<html>
-	<body>
-	
+<!DOCTYPE html>
+<html ng-app="myTextApp">
+	<head>
+		<meta charset="utf-8">
+		<title>My Text App</title>
+	</head>
+	<body ng-controller="MainController">
+			<div>
+				<input type="text" name="Input Text" ng-model="newText">
+				<p>
+					<span>{{newText}}</span>
+				</p>
+			</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
